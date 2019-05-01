@@ -107,8 +107,8 @@ public class PictureTester
     //testKeepOnlyGreen();
     //testNegate();
     //testGrayscale();
-    testMirrorVerticalRightToLeft();
-    //testMirrorVertical();
+    //testMirrorVerticalRightToLeft();
+    testMirrorVertical();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
