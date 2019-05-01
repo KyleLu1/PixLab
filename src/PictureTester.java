@@ -57,6 +57,13 @@ public class PictureTester
       koala.explore();
   }
   
+  public static void testMirrorHorizontal()
+  {
+      Picture koala = new Picture("src/images/koala.jpg");
+      koala.explore();
+      koala.mirrorHorizontal();
+      koala.explore();
+  }
   
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
