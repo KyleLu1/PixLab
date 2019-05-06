@@ -67,7 +67,7 @@ public class PictureTester
   
   public static void testMirrorHorizontalBotToTop()
   {
-      Picture koala = new Picture("src/images/koala.jpg");
+      Picture koala = new Picture("src/images/seagull.jpg");
       koala.explore();
       koala.mirrorHorizontalBotToTop();
       koala.explore();
@@ -125,7 +125,8 @@ public class PictureTester
     //testNegate();
     //testGrayscale();
     //testMirrorVerticalRightToLeft();
-    testMirrorVertical();
+      testMirrorHorizontalBotToTop();
+    //testMirrorVertical();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
