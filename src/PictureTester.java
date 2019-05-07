@@ -89,6 +89,16 @@ public class PictureTester
       seagull.explore();
   }
   
+  public static void testBlur(int x, int y, int w, int h, int n)
+{
+   Picture redMoto = new Picture("src/images/redMotorcycle.jpg");
+   redMoto.explore();
+   for (int i = 0; i<n; i++){
+      redMoto.blur(x,y,w,h);
+    }
+    redMoto.explore();
+}
+
   
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
@@ -141,8 +151,9 @@ public class PictureTester
     //testGrayscale();
     //testMirrorVerticalRightToLeft();
     //testMirrorHorizontalBotToTop();
-    //testMirrorArms();
-    testMirrorGull();
+      
+      testBlur(180,160,25,25,10);
+      
     //testMirrorVertical();
     //testMirrorTemple();
     //testMirrorArms();
