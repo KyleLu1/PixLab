@@ -205,6 +205,58 @@ public class Picture extends SimplePicture
        }
  }
  
+ public void mirrorArms()
+ {
+ Pixel topPixel = null;
+ Pixel botPixel = null;
+ Pixel[][] pixels = this.getPixels2D();
+
+ // loop through the rows
+ for (int row = 155; row < 191; row++)
+ {
+ // loop through the columns
+ for (int col = 98; col < 169; col++)
+ {
+ topPixel = pixels[row][col];
+ botPixel = pixels[191-row+191][col];
+ botPixel.setColor(topPixel.getColor());
+ }
+ }
+
+ // loop through the rows
+ for (int row = 155; row < 191; row++)
+ {
+ // loop through the columns
+ for (int col = 238; col < 296; col++)
+ {
+ topPixel = pixels[row][col];
+ botPixel = pixels[191-row+191][col];
+ botPixel.setColor(topPixel.getColor());
+ }
+ }
+ }
+ 
+ public void mirrorGull()
+ {
+ int mirrorPoint = 350;
+17
+ Pixel leftPixel = null;
+ Pixel rightPixel = null;
+ Pixel[][] pixels = this.getPixels2D();
+
+ // loop through the rows
+ for (int row = 225; row < 332; row++)
+ {
+ // loop from 13 to just before the mirror point
+ for (int col = 219; col < mirrorPoint; col++)
+ {
+ leftPixel = pixels[row][col];
+ rightPixel = pixels[row][mirrorPoint - col +
+ mirrorPoint];
+ rightPixel.setColor(leftPixel.getColor());
+ }
+ }
+ }
  
  
   /** Method that mirrors the picture around a 
