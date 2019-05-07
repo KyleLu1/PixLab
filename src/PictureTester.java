@@ -71,9 +71,24 @@ public class PictureTester
       koala.explore();
       koala.mirrorHorizontalBotToTop();
       koala.explore();
-    
-    
   }
+  
+  public static void testMirrorArms()
+  {
+      Picture snowman = new Picture("src/images/snowman.jpg");
+      snowman.explore();
+      snowman.mirrorArms();
+      snowman.explore();
+  }
+  
+  public static void testMirrorGull()
+  {
+      Picture seagull = new Picture("src/images/seagull.jpg");
+      seagull.explore();
+      seagull.mirrorGull();
+      seagull.explore();
+  }
+  
   
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
@@ -125,7 +140,9 @@ public class PictureTester
     //testNegate();
     //testGrayscale();
     //testMirrorVerticalRightToLeft();
-      testMirrorHorizontalBotToTop();
+    //testMirrorHorizontalBotToTop();
+    testMirrorArms();
+    testMirrorGull();
     //testMirrorVertical();
     //testMirrorTemple();
     //testMirrorArms();
